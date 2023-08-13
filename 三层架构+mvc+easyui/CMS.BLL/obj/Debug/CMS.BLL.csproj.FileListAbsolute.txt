@@ -1,0 +1,9 @@
+C:\Visual Studio Project\CMS\CMS.BLL\bin\Debug\CMS.BLL.dll
+C:\Visual Studio Project\CMS\CMS.BLL\bin\Debug\CMS.BLL.pdb
+C:\Visual Studio Project\CMS\CMS.BLL\bin\Debug\CMS.DAL.dll
+C:\Visual Studio Project\CMS\CMS.BLL\bin\Debug\CMS.Model.dll
+C:\Visual Studio Project\CMS\CMS.BLL\bin\Debug\CMS.DAL.pdb
+C:\Visual Studio Project\CMS\CMS.BLL\bin\Debug\CMS.Model.pdb
+C:\Visual Studio Project\CMS\CMS.BLL\obj\Debug\CMS.BLL.csprojResolveAssemblyReference.cache
+C:\Visual Studio Project\CMS\CMS.BLL\obj\Debug\CMS.BLL.dll
+C:\Visual Studio Project\CMS\CMS.BLL\obj\Debug\CMS.BLL.pdb

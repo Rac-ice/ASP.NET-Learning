@@ -1,0 +1,102 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/kindeditor/themes/default/default.css" rel="stylesheet" />
+    <link href="~/kindeditor/plugins/code/prettify.css" rel="stylesheet" />
+    <link href="~/Content/tableStyle.css" rel="stylesheet" />
+    <script src="~/kindeditor/kindeditor-all-min.js"></script>
+    <script src="~/kindeditor/lang/zh-CN.js"></script>
+    <script src="~/kindeditor/plugins/code/prettify.js"></script>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.easyui.min.js"></script>
+    <script src="~/Scripts/easyui-lang-zh_CN.js"></script>
+    <title>添加新闻</title>
+    <script type="text/javascript">
+        KindEditor.ready(function (K) {
+            var editor1 = K.create('#MsgContent', {
+                cssPath: '../plugins/code/prettify.css',
+                uploadJson: '../asp.net/upload_json.ashx',
+                fileManagerJson: '../asp.net/file_manager_json.ashx',
+                allowFileManager: true,
+                afterCreate: function () {
+                    var self = this;
+                    K.ctrl(document, 13, function () {
+                        self.sync();
+                        K('form[name=example]')[0].submit();
+                    });
+                    K.ctrl(self.edit.doc, 13, function () {
+                        self.sync();
+                        K('form[name=example]')[0].submit();
+                    });
+                }
+            });
+            prettyPrint();
+        });
+        $(function () {
+            fileUpload();
+        });
+
+        function fileUpload() {
+            $("#btnFileUp").click(function () {
+                if ($("#fileUpImage").val() == "") {
+                    $.messager.alert("提示", "请选择上传的图片文件", "info");
+                    return;
+                }
+                $("#form1").ajaxSubmit({
+                    type: "post",
+                    url: "/AdminNewList/FileUpload",
+                    success: function (data) {
+                        var serverDate = data.split(':');
+                        if (serverDate[0] == "ok") {
+                            $("#hidImagePath").val(serverDate[1]);//将路径赋值给了隐藏域，提交表单时将提交到服务端保存到数据库
+                            $("#showImage").append("<img src='" + serverDate[1] + "' width='40px' height='40px'/>");
+                        } else {
+                            $.messager.alert("提示",serverData[1],"info");
+                        }
+                    }
+                });
+            });
+        }
+        //提交表单
+        function subForm() {
+            $("#form1").submit();
+        }
+        function afterAdd() {
+            window.parent.afterAdd();
+        }
+    </script>
+</head>
+<body>
+    <div>
+        @using (Ajax.BeginForm("FileUpload", "AdminNewList", new AjaxOptions() { HttpMethod = "post", OnSuccess = "afterAdd" }, new { id="form1" }))
+        {
+            <table width="100%" height="100%">
+                <tr><th>新闻名称</th><td><input type="text" name="Title" /></td></tr>
+                <tr><th>作者</th><td><input type="text" name="Author" /></td></tr>
+                <tr>
+                    <th>上传图片</th>
+                    <td>
+                        <input type="file" name="fileUp" id="fileUpImage" />
+                        <input type="submit" value="上传图片" id="btnFileUp"/>
+                        <input type="hidden" id="hidImagePath" name="ImagePath" />
+                        <div id="showImage"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>新闻内容</th>
+                    <td>
+                        <textarea id="MsgContent" name="Msg" cols="100" rows="8" style="width:700px;height:200px;visibility:hidden;"></textarea>
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+</body>
+</html>
