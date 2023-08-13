@@ -9,19 +9,18 @@ ViewModel：视图模型
 主要是将Model中的数据展示给用户，ASPX和ASCS文件被用来处理试图的职责
 - Controller 处理用户交互，从Model中获取数据并将数据传给指定的View
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/67224af3-3229-4c7f-98f6-289047f3936f/Untitled.png)
+![image](https://github.com/Rac-ice/ASP.NET-Learning/assets/56425821/072e9ede-8e78-4eea-a263-944491c6470f)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4a81ee9e-ee8e-4c02-bfe3-fbb6e529cc9f/Untitled.png)
 
 ## MVC架构模式
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8e3ee78d-7178-490f-bd7b-330403077f17/Untitled.png)
+![image](https://github.com/Rac-ice/ASP.NET-Learning/assets/56425821/3db4949a-2368-4a8e-9f85-ec2d965bc83c)
+
 
 ## 三层架构与MVC
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/262273eb-4178-437a-93fe-1488939ef6ec/Untitled.png)
+![image](https://github.com/Rac-ice/ASP.NET-Learning/assets/56425821/d6be2f50-3a54-45e0-b1ec-4940120bc291)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8511d422-e995-41b0-8a63-d66717cc6a48/Untitled.png)
 
 ## ASP.Net的两种开发方式
 
@@ -33,17 +32,17 @@ ViewModel：视图模型
     - 更接近原始的“请求-处理-响应”
     - 底层跟WebForm是一样的，管道上进行不同处理
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/03531b4f-5ba5-4539-85ae-f2fbdde0e715/Untitled.png)
+![image](https://github.com/Rac-ice/ASP.NET-Learning/assets/56425821/45b337ec-a8e3-4f93-a961-d074b1aeb800)
+
 
 ### `Asp.Net MVC`请求模型
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0446e3d5-8de7-4047-ba97-5284b3b51ccf/Untitled.png)
+![image](https://github.com/Rac-ice/ASP.NET-Learning/assets/56425821/49fb322e-b535-4db9-a0ba-b2a8dfc228c1)
 
 ### `WebForm`模型
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/23210c49-6796-427e-bca7-74be8f6b7d71/Untitled.png)
+![image](https://github.com/Rac-ice/ASP.NET-Learning/assets/56425821/2969025f-0bed-4e5b-8d55-48d7cabce1d9)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6305d85d-90cf-48d6-85cb-7d3659b6c10d/Untitled.png)
 
 ## HtmlHelper详解
 
@@ -188,7 +187,8 @@ ViewData.Model = userInfo;
 
 ### Razor引擎的转换数据类型
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/357ee60d-ee07-43b2-a8d5-6c5c65f299d0/Untitled.png)
+![image](https://github.com/Rac-ice/ASP.NET-Learning/assets/56425821/2377ca07-1ec9-4b48-8b86-17ac55637801)
+
 
 ## 控制器详解
 
@@ -204,7 +204,8 @@ ViewData.Model = userInfo;
     - 确定其他参数
     - 根据识别出来的数据，将请求传递给Controller和Action
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/505c7bd4-50db-4d0b-9e46-26f76dc77c21/Untitled.png)
+![image](https://github.com/Rac-ice/ASP.NET-Learning/assets/56425821/6a5c3a5e-c3b3-4cd0-a40a-3f7ef506b1bd)
+
 
 - 路由规则
     - 可以有多条路由规则
@@ -216,7 +217,8 @@ ViewData.Model = userInfo;
 - localhost/{频道}/{具体网页}
 - 其中域名第一层，频道第二层，最后的网页就是最后一层，如果使用默认实例中的”{controller}/{action}-{其他参数}”的形式会影响网站的SEO
 
-![路由规则书写顺序由最子项到全能匹配](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c74b2fd2-a6b0-49dc-bbda-3fafdcd082a2/Untitled.png)
+![路由规则书写顺序由最子项到全能匹配]![image](https://github.com/Rac-ice/ASP.NET-Learning/assets/56425821/5c5cc61a-1ff0-485a-89dc-23f49300173e)
+
 
 路由规则书写顺序由最子项到全能匹配
 
