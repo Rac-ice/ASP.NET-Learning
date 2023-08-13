@@ -328,7 +328,8 @@ ViewData.Model = userInfo;
 
 ### 微软提供的默认的过滤器
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1c57fe16-0f6b-418b-9199-3bdb0259a373/Untitled.png)
+![image](https://github.com/Rac-ice/ASP.NET-Learning/assets/56425821/82d2ec56-3753-4804-906c-9479df64341d)
+
 
 - 作用到Action的过滤器，优先级最高
     
@@ -436,8 +437,5 @@ ViewData.Model = userInfo;
 
 ### Ajax请求WebAPI
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/573caddc-6ab4-4955-a645-0a2df1c562d8/Untitled.png)
+![image](https://github.com/Rac-ice/ASP.NET-Learning/assets/56425821/239f115d-b99e-41f0-a007-673678c9c161)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dc69c9c2-8f21-4846-9a73-b89487a36fe9/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a96e54ea-f698-402f-9099-1f23b8d81326/Untitled.png)
