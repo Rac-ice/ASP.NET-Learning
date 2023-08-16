@@ -1,0 +1,9 @@
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IBLL\bin\Debug\IBLL.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IBLL\bin\Debug\IBLL.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IBLL\bin\Debug\Model.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IBLL\bin\Debug\Model.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IBLL\obj\Debug\IBLL.csproj.AssemblyReference.cache
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IBLL\obj\Debug\IBLL.csproj.CoreCompileInputs.cache
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IBLL\obj\Debug\IBLL.csproj.CopyComplete
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IBLL\obj\Debug\IBLL.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IBLL\obj\Debug\IBLL.pdb

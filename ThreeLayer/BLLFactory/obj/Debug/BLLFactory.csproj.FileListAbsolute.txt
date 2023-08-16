@@ -1,0 +1,11 @@
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLLFactory\bin\Debug\BLLFactory.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLLFactory\bin\Debug\BLLFactory.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLLFactory\bin\Debug\IBLL.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLLFactory\bin\Debug\Model.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLLFactory\bin\Debug\IBLL.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLLFactory\bin\Debug\Model.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLLFactory\obj\Debug\BLLFactory.csproj.AssemblyReference.cache
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLLFactory\obj\Debug\BLLFactory.csproj.CoreCompileInputs.cache
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLLFactory\obj\Debug\BLLFactory.csproj.CopyComplete
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLLFactory\obj\Debug\BLLFactory.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLLFactory\obj\Debug\BLLFactory.pdb

@@ -1,0 +1,8 @@
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DBUtility\bin\Debug\DBUtility.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DBUtility\bin\Debug\DBUtility.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DBUtility\bin\Debug\System.Data.SQLite.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DBUtility\obj\Debug\DBUtility.csproj.AssemblyReference.cache
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DBUtility\obj\Debug\DBUtility.csproj.CoreCompileInputs.cache
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DBUtility\obj\Debug\DBUtility.csproj.CopyComplete
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DBUtility\obj\Debug\DBUtility.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DBUtility\obj\Debug\DBUtility.pdb

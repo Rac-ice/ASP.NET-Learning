@@ -1,0 +1,9 @@
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IDAL\bin\Debug\IDAL.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IDAL\bin\Debug\IDAL.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IDAL\bin\Debug\Model.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IDAL\bin\Debug\Model.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IDAL\obj\Debug\IDAL.csproj.AssemblyReference.cache
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IDAL\obj\Debug\IDAL.csproj.CoreCompileInputs.cache
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IDAL\obj\Debug\IDAL.csproj.CopyComplete
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IDAL\obj\Debug\IDAL.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\IDAL\obj\Debug\IDAL.pdb

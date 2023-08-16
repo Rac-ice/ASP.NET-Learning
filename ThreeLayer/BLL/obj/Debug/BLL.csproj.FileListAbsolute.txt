@@ -1,0 +1,17 @@
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\bin\Debug\BLL.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\bin\Debug\BLL.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\bin\Debug\Model.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\bin\Debug\Model.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\obj\Debug\BLL.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\obj\Debug\BLL.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\bin\Debug\DALFactory.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\bin\Debug\IDAL.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\bin\Debug\DALFactory.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\bin\Debug\IDAL.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\bin\Debug\IBLL.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\BLL\bin\Debug\IBLL.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\Demo\bin\Debug\BLL.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\Demo\bin\Debug\BLL.pdb

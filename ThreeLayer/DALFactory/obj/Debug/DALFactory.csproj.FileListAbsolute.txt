@@ -1,0 +1,11 @@
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DALFactory\bin\Debug\DALFactory.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DALFactory\bin\Debug\DALFactory.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DALFactory\bin\Debug\IDAL.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DALFactory\bin\Debug\Model.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DALFactory\bin\Debug\IDAL.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DALFactory\bin\Debug\Model.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DALFactory\obj\Debug\DALFactory.csproj.AssemblyReference.cache
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DALFactory\obj\Debug\DALFactory.csproj.CoreCompileInputs.cache
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DALFactory\obj\Debug\DALFactory.csproj.CopyComplete
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DALFactory\obj\Debug\DALFactory.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\DALFactory\obj\Debug\DALFactory.pdb

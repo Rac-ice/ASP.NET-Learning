@@ -1,0 +1,6 @@
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\Model\bin\Debug\Model.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\Model\bin\Debug\Model.pdb
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\Model\obj\Debug\Model.dll
+C:\Users\16025\Documents\Visual Studio Project\ThreeLayer\Model\obj\Debug\Model.pdb
