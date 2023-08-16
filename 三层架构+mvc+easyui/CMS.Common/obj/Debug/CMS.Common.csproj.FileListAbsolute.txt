@@ -1,0 +1,5 @@
+C:\Visual Studio Project\CMS\CMS.Common\bin\Debug\CMS.Common.dll
+C:\Visual Studio Project\CMS\CMS.Common\bin\Debug\CMS.Common.pdb
+C:\Visual Studio Project\CMS\CMS.Common\obj\Debug\CMS.Common.dll
+C:\Visual Studio Project\CMS\CMS.Common\obj\Debug\CMS.Common.pdb
+C:\Visual Studio Project\CMS\CMS.Common\obj\Debug\CMS.Common.csprojResolveAssemblyReference.cache

@@ -1,0 +1,79 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <link href="~/Content/themes/default/easyui.css" rel="stylesheet" />
+    <link href="~/Content/themes/icon.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery.easyui.min.js"></script>
+    <script src="~/Scripts/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            bindClickEvent();
+        });
+        function bindClickEvent() {
+            //绑定超连接的单击事件
+            $(".detailLink").click(function () {
+                var title = $(this).text();
+                var url = $(this).attr("url");
+                var isExt = $("#tt").tabs('exists', title);//判断页签是否存在
+                if (isExt) {
+                    $("#tt").tabs('select', title);
+                    return;
+                }
+                $('#tt').tabs('add', {
+                    title: title,
+                    content: showContent(url),
+                    closable: true
+                });
+            });
+        }
+        function showContent(url) {
+            var strHtml = '<iframe src="' + url + '" scrolling="no" width="100%" height="auto" frameborder="0"></iframe>';
+            return strHtml;
+        }
+    </script>
+</head>
+<body class="easyui-layout">
+    <!--顶部-->
+    <div data-options="region:'north',border:false" style="height:105px;background:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(238,249,254,1) 25%, rgba(196,223,238,1) 50%, rgba(96,175,218,1) 75%, rgba(26,163,236,1) 100%);padding-left:10px;overflow:hidden;">
+        <img src="/Content/Images/logo.png" height="105" />
+    </div>
+    <!--顶部-->
+    <!--左侧-->
+    <div data-options="region:'west',split:true,title:'管理栏'" style="width:200px;padding:2px;">
+        <div class="easyui-accordion" data-options="multiple:true" style="width:auto;">
+            <div title="新闻管理" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
+                <a href="javascript:void(0)" class="detailLink" url="/AdminNewList/Index">新闻管理</a>
+            </div>
+            <div title="评论管理" data-options="iconCls:'icon-reload'" style="padding:10px;">
+                <a href="javascript:void(0)" class="detailLink" url="/AdminCommentList/Index">评论管理</a>
+            </div>
+        </div>
+    </div>
+    <!--左侧-->
+    <!--底部-->
+    <div data-options="region:'south',border:false" style="height:auto;background:#A9FACD;padding:10px;text-align:center;">
+        Copyright © 2023 News - 琼ICP备2021004479号-1
+    </div>
+    <!--底部-->
+
+    <div data-options="region:'center',title:'内容'">
+        
+        <div id="tt" class="easyui-tabs" fit="true">
+            <div title="新闻管理" data-options="closable:true">
+                <iframe src="/AdminNewList/Index" scrolling="no" width="100%" height="99%" frameborder="0"></iframe>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

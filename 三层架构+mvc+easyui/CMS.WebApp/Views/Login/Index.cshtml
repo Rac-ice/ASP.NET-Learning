@@ -1,0 +1,109 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+        span{
+            color :red;
+        }
+    </style>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById("btnLogin").style.display = "none";
+
+            let txtName = document.getElementById("txtName");
+            txtName.onblur = function () {
+                if (txtName.value == "") {
+                    document.getElementById("checkName").innerHTML = "账号不能为空！";
+                } else {
+                    document.getElementById("checkName").innerHTML = "";
+                }
+                checkWrite();
+            }
+
+            let txtPwd = document.getElementById("txtPwd");
+            txtPwd.onblur = function () {
+                if (txtPwd.value == "") {
+                    document.getElementById("checkPwd").innerHTML = "密码不能为空！";
+                } else {
+                    document.getElementById("checkPwd").innerHTML = "";
+                }
+                checkWrite();
+            }
+
+            let txtCode = document.getElementById("txtCode");
+            txtCode.onblur = function () {
+                if (txtCode.value == "") {
+                    document.getElementById("checkCode").innerHTML = "验证码不能为空！";
+                } else {
+                    $.ajax({
+                        url: "/Login/CheckCode",
+                        type: "post",
+                        data: { "txtCode": txtCode.value },
+                        success: function (data) {
+                            if (data == "ok") {
+                                document.getElementById("checkCode").innerHTML = "";
+                            } else {
+                                document.getElementById("checkCode").innerHTML = "验证码输入错误！";
+                            }
+                        }
+                    });
+                }
+                checkWrite();
+            }
+
+        }
+
+        function checkWrite() {
+            if (txtName.value != "" && txtPwd.value != "" && txtCode.value != "") {
+                document.getElementById("btnLogin").style.display = "block";
+            } else {
+                document.getElementById("btnLogin").style.display = "none";
+            }
+        }
+
+        function changeCheckCode() {
+            document.getElementById("vCode").src = "/Login/ShowValidateCode?d="+new Date().getMilliseconds();
+        }
+
+        function afterLogin(data) {
+            var serverData = data.split(':');
+            if (serverData[0]=="ok") {
+                window.location.href = "/Home/Index";
+            } else if (serverData[0] == "no") {
+                alert("查无此人");
+                txtName.value = "";
+                txtPwd.value = "";
+                txtCode.value = "";
+            } else if (serverData[0] == "null") {
+                document.getElementById("checkCode").innerHTML = "验证码错误！";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <center>
+            @using (Ajax.BeginForm("UserLogin", new { }, new AjaxOptions() { HttpMethod = "post", OnSuccess = "afterLogin" }, new { id = "loginForm" }))
+            {
+                <table>
+                    <tr><th colspan="2"><h3>CMS系统账号登录</h3></th></tr>
+                    <tr><td>账号</td><td><input type="text" name="txtName" id="txtName" /></td><td><span id="checkName"></span></td></tr>
+                    <tr><td>密码</td><td><input type="password" name="txtPwd" id="txtPwd" /></td><td><span id="checkPwd"></span></td></tr>
+                    <tr><td>验证码</td><td><input type="text" name="txtCode" id="txtCode" /></td><td><span id="checkCode"></span></td></tr>
+                    <tr><td></td><td><img src="/Login/ShowValidateCode" id="vCode" /><a href="javascript:void(0)" onclick="changeCheckCode()">看不清，换一张</a></td></tr>
+                    <tr><td></td><td><input type="submit" value="登录" id="btnLogin" /></td></tr>
+                </table>
+            }
+        </center>
+    </div>
+</body>
+</html>
