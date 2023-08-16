@@ -9,4 +9,5 @@ ASP.NET 学习记录
 ![image](https://github.com/Rac-ice/ASP.NET-Learning/assets/56425821/372dbc0d-211a-4123-935a-42a865c657cf)
 
 Three Layer
+
 工厂模式三层架构，实现了抽屉式的代码替换，耦合度达到了最低，更换数据库只用编写访问对应数据库的数据访问层，修改config文件即可
