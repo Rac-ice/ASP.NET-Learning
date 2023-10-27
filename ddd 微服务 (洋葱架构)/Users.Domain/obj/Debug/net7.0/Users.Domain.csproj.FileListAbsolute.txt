@@ -1,0 +1,15 @@
+C:\Users\16025\Documents\ddd\Users\Users.Domain\bin\Debug\net7.0\Users.Domain.deps.json
+C:\Users\16025\Documents\ddd\Users\Users.Domain\bin\Debug\net7.0\Users.Domain.dll
+C:\Users\16025\Documents\ddd\Users\Users.Domain\bin\Debug\net7.0\Users.Domain.pdb
+C:\Users\16025\Documents\ddd\Users\Users.Domain\bin\Debug\net7.0\Common.dll
+C:\Users\16025\Documents\ddd\Users\Users.Domain\bin\Debug\net7.0\Common.pdb
+C:\Users\16025\Documents\ddd\Users\Users.Domain\obj\Debug\net7.0\Users.Domain.csproj.AssemblyReference.cache
+C:\Users\16025\Documents\ddd\Users\Users.Domain\obj\Debug\net7.0\Users.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\16025\Documents\ddd\Users\Users.Domain\obj\Debug\net7.0\Users.Domain.AssemblyInfoInputs.cache
+C:\Users\16025\Documents\ddd\Users\Users.Domain\obj\Debug\net7.0\Users.Domain.AssemblyInfo.cs
+C:\Users\16025\Documents\ddd\Users\Users.Domain\obj\Debug\net7.0\Users.Domain.csproj.CoreCompileInputs.cache
+C:\Users\16025\Documents\ddd\Users\Users.Domain\obj\Debug\net7.0\Users.Domain.csproj.CopyComplete
+C:\Users\16025\Documents\ddd\Users\Users.Domain\obj\Debug\net7.0\Users.Domain.dll
+C:\Users\16025\Documents\ddd\Users\Users.Domain\obj\Debug\net7.0\refint\Users.Domain.dll
+C:\Users\16025\Documents\ddd\Users\Users.Domain\obj\Debug\net7.0\Users.Domain.pdb
+C:\Users\16025\Documents\ddd\Users\Users.Domain\obj\Debug\net7.0\ref\Users.Domain.dll
