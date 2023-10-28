@@ -8,7 +8,6 @@ namespace Users.WebAPI.Controllers
 {
     [Route("[controller]/[action]")]
     [ApiController]
-    [UnitOfWork(typeof(UserDbContext))]
     public class LoginController : ControllerBase
     {
         private readonly UserDomainService userDomainService;
@@ -19,6 +18,7 @@ namespace Users.WebAPI.Controllers
         }
 
         [HttpPut]
+        [UnitOfWork(typeof(UserDbContext))]
         public async Task<IActionResult> LoginByPhoneAndPwd(LoginByPhoneAndPwdRequest req)
         {
             if (req.Password.Length < 6) return BadRequest("密码长度不能小于6");
@@ -60,6 +60,7 @@ namespace Users.WebAPI.Controllers
         }
 
         [HttpPost]
+        [UnitOfWork(typeof(UserDbContext))]
         public async Task<IActionResult> CheckCode(CheckLoginByPhoneAndCodeRequest req)
         {
             var result = await userDomainService.CheckPhoneNumberCodeAsync(req.PhoneNumber, req.Code);

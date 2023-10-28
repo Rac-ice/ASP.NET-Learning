@@ -118,8 +118,8 @@ namespace Users.Domain.DomainServices
                 return UserAccessResult.Lockout;
             }
             string code = Random.Shared.Next(1000, 9999).ToString();
-            //smsCodeSender.SendCode(phoneNumber, code);
             await userDomainRepository.SavePhoneNumberCodeAsync(phoneNumber, code);
+            smsCodeSender.SendCode(phoneNumber, code);
             return UserAccessResult.OK;
         }
     }

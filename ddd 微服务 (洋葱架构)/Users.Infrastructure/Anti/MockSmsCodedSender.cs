@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Users.Domain.IAntis;
 using Users.Domain.ValueObjects;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Users.Infrastructure.Anti
 {
@@ -15,14 +16,15 @@ namespace Users.Infrastructure.Anti
 
         public void SendCode(PhoneNumber phoneNumber, string code)
         {
-            SendCode sendCode = new SendCode() { PhoneNumber = phoneNumber, Code = code };
-            logger.LogInformation($"向{phoneNumber}发送验证吗{code}",sendCode);
+            SendCode sendCode = new SendCode() { RegionCode = phoneNumber.RegionCode, Number = phoneNumber.Number, Code = code };
+            logger.LogInformation($"向 +{sendCode.RegionCode} {sendCode.Number} 发送验证码 {code}");
         }
     }
 
     class SendCode
     {
-        public PhoneNumber PhoneNumber { get; set; }
+        public string RegionCode { get; set; }
+        public string Number {  get; set; }
         public string Code { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace Users.WebAPI.UnitOfWork
 {
-    [AttributeUsage(AttributeTargets.Class
+    /*[AttributeUsage(AttributeTargets.Class
         | AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
     public class UnitOfWorkAttribute : Attribute
     {
@@ -18,6 +18,17 @@ namespace Users.WebAPI.UnitOfWork
                     throw new ArgumentException($"{type} must inherit from DbContext");
                 }
             }
+        }
+    }*/
+
+    [AttributeUsage(AttributeTargets.Method)]
+    public class UnitOfWorkAttribute : Attribute
+    {
+        public Type[] DbContextTypes { get; init; }
+
+        public UnitOfWorkAttribute(params Type[] dbContextTypes)
+        {
+            this.DbContextTypes = dbContextTypes;
         }
     }
 }

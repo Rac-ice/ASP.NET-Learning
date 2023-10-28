@@ -12,7 +12,6 @@ namespace Users.WebAPI.Controllers
 {
     [Route("[controller]/[action]")]
     [ApiController]
-    [UnitOfWork(typeof(UserDbContext))]
     public class UsersMgrController : ControllerBase
     {
         private readonly UserDbContext context;
@@ -27,6 +26,7 @@ namespace Users.WebAPI.Controllers
         }
 
         [HttpPost]
+        [UnitOfWork(typeof(UserDbContext))]
         public async Task<IActionResult> AddNew(PhoneNumber phoneNumber)
         {
             if ((await userDomainRepository.FindOneAsync(phoneNumber))!=null)
@@ -37,6 +37,7 @@ namespace Users.WebAPI.Controllers
         }
 
         [HttpPut]
+        [UnitOfWork(typeof(UserDbContext))]
         public async Task<IActionResult> ChangePassword(ChangePasswordRequest req)
         {
             var user = await userDomainRepository.FindOneAsync(req.Id);
@@ -47,6 +48,7 @@ namespace Users.WebAPI.Controllers
 
         [HttpPut]
         [Route("{id}")]
+        [UnitOfWork(typeof(UserDbContext))]
         public async Task<IActionResult> Unlock(Guid id)
         {
             var user = await userDomainRepository.FindOneAsync(id);

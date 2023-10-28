@@ -8,7 +8,7 @@ namespace Users.WebAPI.UnitOfWork
 {
     public class UnitOfWorkFilter : IAsyncActionFilter
     {
-        private static UnitOfWorkAttribute? GetUoWAttr(ActionDescriptor actionDesc)
+        /*private static UnitOfWorkAttribute? GetUoWAttr(ActionDescriptor actionDesc)
         {
             var desc = actionDesc as ControllerActionDescriptor;
             if (desc == null)
@@ -48,6 +48,22 @@ namespace Users.WebAPI.UnitOfWork
                 {
                     await dbContext.SaveChangesAsync();
                 }
+            }
+        }*/
+
+
+        public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+        {
+            var result = await next();
+            if (result.Exception != null) return;
+            var actionDesc = context.ActionDescriptor as ControllerActionDescriptor;
+            if (actionDesc == null) return;
+            var uowAttr = actionDesc.MethodInfo.GetCustomAttribute<UnitOfWorkAttribute>();
+            if (uowAttr == null) return;
+            foreach (var dbCtxType in uowAttr.DbContextTypes)
+            {
+                var dbCtx = context.HttpContext.RequestServices.GetService(dbCtxType) as DbContext;
+                if (dbCtx != null) await dbCtx.SaveChangesAsync();
             }
         }
     }
